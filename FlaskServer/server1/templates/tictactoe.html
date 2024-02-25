@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rocco's Tic-Tac-Toe</title>
+        <meta name="description" content="Rocco Zhang's Tic Tac Toe for TJ Web App Dev">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/tictactoe.css')}}">
+    </head>
+    <body>
+        <form method="post">
+            <button type="submit">Do it!</button>
+        </form>
+
+        <h1 id="title">
+            Tic-Toe-Tac
+        </h1>
+
+        <div id="game_area">
+            <div id="cell_1-1" class="board_cell" data-cell_id="0"></div>
+            <div id="cell_1-2" class="board_cell" data-cell_id="1"></div>
+            <div id="cell_1-3" class="board_cell" data-cell_id="2"></div>
+            <div id="cell_2-1" class="board_cell" data-cell_id="3"></div>
+            <div id="cell_2-2" class="board_cell" data-cell_id="4"></div>
+            <div id="cell_2-3" class="board_cell" data-cell_id="5"></div>
+            <div id="cell_3-1" class="board_cell" data-cell_id="6"></div>
+            <div id="cell_3-2" class="board_cell" data-cell_id="7"></div>
+            <div id="cell_3-3" class="board_cell" data-cell_id="8"></div>
+        </div>
+        
+        <div id="controls">
+            <button id="reset_button">CLEAR</button>
+        </div>
+        <div id="stats">
+            <h2 id="game_ending_display">X's Turn</h1>
+        </div>
+
+
+        <script type="module" src="{{url_for('static', filename='scripts/tictactoe_page.js')}}" async defer></script>
+    </body>
+</html>

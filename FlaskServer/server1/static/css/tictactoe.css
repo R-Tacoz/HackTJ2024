@@ -1,0 +1,65 @@
+:root {
+    --board-size: 332px;
+    background-color: aliceblue;
+}
+body { margin: 0; }
+#title {
+    margin-top: 10%;
+    text-align: center;
+    background-color: #fff000ff;
+    font-size: 60px;
+    font-family: 'Trebuchet MS';
+}
+#game_area {
+    display: grid;
+    grid-template-columns:  repeat(3, auto);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    width: var(--board-size);
+    height: var(--board-size);
+    margin: auto;
+    margin-top: 0;
+    border: 2px solid;
+    border-radius: 10px;
+    background: #cc1800;
+}
+#controls {
+    width: var(--board-size);
+    margin: auto;
+    padding: 0;
+    border: 1px solid;
+}
+#stats {
+    width: var(--board-size);
+    margin-top: 15%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    background-color: skyblue;
+}
+#game_ending_display {
+
+}
+#reset_button {
+    width: 100%;
+    height: 50px;
+    font-family: 'Segoe UI'
+}
+img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.board_cell {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid;
+    border-radius: 5px;
+    background: #ffffff;
+}

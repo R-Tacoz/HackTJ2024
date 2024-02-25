@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MoreCSS</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    </head>
+    <body>
+
+        <nav class="breadcrumb">
+            <ul>
+              <li><a href="{{ url_for('redirected') }}">Bob's Stand</a></li>
+              <li>Amongus</li>
+            </ul>
+        </nav>
+
+        <div class="desc">Bob's Stand was founded in 19160 and has been operating since then. Among the text you see here, there is a hidden Among Us player sprite; see if you can find it</div>
+
+        <div class = "maincontent">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis unde exercitationem consectetur assumenda incidunt voluptatibus aut porro eos doloribus aliquid necessitatibus voluptates temporibus voluptas commodi, sunt vero reiciendis expedita quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat. Eveniet ab, commodi accusantium dolor voluptatum obcaecati a cumque explicabo ipsum sapiente possimus reprehenderit? Aut amet fugit ducimus blanditiis libero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem pariatur consequatur eaque dolorem neque ducimus ad soluta minus praesentium itaque, hic laborum et ex suscipit commodi recusandae est voluptate facere.</p>
+            <p>Lorem ipsum <span class="highlight"> sit amet consectetur adipisicing </span>elit. Aliquam, laborum modi. Explicabo sint quod rerum labore alias eligendi iste cum saepe ratione earum esse, cumque quas qui necessitatibus corrupti error.</p>
+        </div>
+
+        <p>my name is {{ data.george }}</p>
+    </body>
+</html>
